@@ -1,0 +1,79 @@
+/* SELECIONA TODOS OS ELEMENTOS */
+*{
+    margin: 1px;
+    padding: 2px
+}
+
+
+
+
+body{
+    background-color:aquamarine;
+    font-fammily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    
+}
+
+
+/* Seletor por class */
+/* # vem para informar que é um ID - #id */
+/* SELETOR DE ID */
+#topo{
+    background-color:darkred;
+}
+
+/* . vem para informar que é uma class - .class */
+.texto-top{
+    font-style: italic;
+    font-size: 25px;
+
+    /* text-decoration - para personalizar o texto- Exemplo: colocar o texto sublinhado */
+    text-decoration: underline;
+}
+
+/* estiliza os elementos com a class bloco. */
+.bloco{
+    background-color:cadetblue;
+    margin-bottom:20px;
+    padding: 20px;
+    /* border - Coloca borda */
+    border: 2px outset;
+
+    /* troca a cor da borda */
+    border-color:darkgrey;
+
+    /* Muda o formato da borda - pode deixar mais arredondada */
+    border-radius:10px ;
+}
+
+header{
+    
+    border: 10px;
+    /*margin-bottom:15px;*/
+    /*margin-top:15px;*/
+    /* numeros da esquera é para cima e para baixo - numeros da direita é para jogar para Direita e para Esquerda. */
+    margin: 10px, 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius:10px ;
+    border-color:darkgrey;
+
+
+
+}
+
+.destaque{
+    background-color:gold;
+    font-weight: bold;
+    color:darkred;
+    
+}
+
+.texto-destaque{
+
+    font-weight: bold;
+    color:darkred;
+}

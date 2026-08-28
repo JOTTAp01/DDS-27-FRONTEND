@@ -1,0 +1,44 @@
+body{
+    background-color:darkslateblue;
+
+    /* Alinhamento do texto */
+    text-align: center;
+}
+
+/* ESTILIZAÇÃO VIA TAG */
+ul{
+    background-color:darkgrey;
+    list-style: none;
+}
+
+li{
+    /* Cor de Fundo */
+    background-color:darkgoldenrod;
+
+    /* Cor do texto */
+    color:darkviolet;
+
+    /* width Largura do elemento */
+    width: 200;
+
+    /* height - altura do elemento */
+    height:35px;
+
+    /* Font-size - tamanho da font */
+    font-size: 20px;
+
+    /* Mudar margem */
+    margin-left: auto;
+    margin-left: auto;
+}
+
+
+h2{
+    font-size: 25px;
+    color:darkcyan;
+    /* Estilo do texto */
+    font-style:oblique
+    /* Familia da fonte */
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    
+}
