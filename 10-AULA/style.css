@@ -9,7 +9,7 @@
 
 body{
     background-color:aquamarine;
-    font-fammily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
@@ -74,6 +74,100 @@ header{
 
 .texto-destaque{
 
-    font-weight: bold;
+    font-weight: bolder;
     color:darkred;
+}
+
+#caixa-unica{
+    background-color: #ede9fe;
+    padding: 10px;
+    border: 2px solid purple;
+}
+
+/* SELECIONA TODOS OS "p" QUE ESTÃO DENTRO DE UMA DIV */
+
+div p{
+    color:blue;
+}
+
+/* SELECIONA TODOS O "p" QUE SÃO DILHOS DIRETOS DA CLASS ESPECIFICA */
+.pai-direto > p{
+    color:green;
+    padding: 5px;
+}
+
+
+/* SELECIONA TODO O "p" QUE VEM LOGO APÓS UM H3, DESDE QUE SEJA IRMÃO */
+h3 + p{
+    color:red;
+
+}
+
+h4 ~ p{
+    background-color:blueviolet;
+    color:yellow;
+}
+
+/* SELECIONA POR ATRIBUTOS ESPECIFICOS */
+
+/* Seleciona todos os inputs que tenham o tipo texto */
+input[type="text"]{
+    border: 2px solid orange;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+
+/* SELECIONA TODOS OS LINKS QUE TENHAM ESSE VALOR NO HREF */
+a[href*="microsoft"]{
+    color:green;
+    font-weight: bolder;
+}
+
+
+/* MESMO ESTILO PRA DUAS TAGS OU MAIS  */
+h5, h6{
+    color:purple;
+    margin: 5px 0px;
+    font-weight:border;
+}
+
+
+/* Seleciona duas coisas ao mesmo tempo. */
+/* .botao.ativo */
+
+
+
+/* Criando o botão sensivel ao sensor */
+.botao{
+    background-color:aliceblue;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 1px;
+    box-shadow: 3px 5px 7px black;
+    
+}
+
+/* Criando o movimento para ao passar o cursor em cima ele mexer */
+.botao:hover{
+    background-color:cyan;
+    transform: scale(0.98);
+    font-size: 15px;
+    padding: 1px;
+}
+
+/* SELECIONA O p DESDE QUE TENHA A CLASS AVISO */
+p.aviso{
+    color:chartreuse;
+}
+
+/* SELECINA APENAS A DIV QUE TENHA O ID PAINEL */
+div#painel{
+    background-color:red;
+    padding: 10px
+}
+
+/* SELECIONANDO FILHO DENTRO DE FILHO */
+#menu ul li a{
+    color:violet;
 }
