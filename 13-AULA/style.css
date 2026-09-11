@@ -1,0 +1,41 @@
+
+.IconesColor{
+    background-color:blueviolet;
+    margin: 10px, 10px;
+    padding-bottom: 4px;
+    padding:10px 20px;
+    border-radius:20px ;
+    box-shadow: 10px 10px 20px purple;
+    width: 120px;
+    border: solid 2px;
+    
+}
+
+.material-symbols-outlined{
+    font-size: 30px;
+    color:gold ;
+    margin-left: 5px;
+}
+
+.icones{
+    font-size: 30px;
+    color:gold;
+    padding: 10px, 0px
+}
+
+.material-symbols-outlined:hover{
+    color:honeydew
+}
+
+.icones:hover{
+    color:floralwhite; 
+    
+}
+
+body{
+    background-color:darkgray;
+}
+
+h1{
+    
+}
