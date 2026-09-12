@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+/* VARIÁVEIS */
+:root{
+    --font-main: "Segoe UI", sans-serif;
+    --color-primary:red;
+    --color-text:#222;
+    --color-bg-page:cornflowerblue;
+    --color-bg-box:#e5e7eb;
+    --color-white:white;
+    --color-gray:gray;
+
+    /* ESTADOS E EXEMPLOS */
+    --blue-bg:#dbeafe;
+    --blue-border:#2563eb;
+    --green-bg:#dcfce7;
+    --green-border:#16a34a;
+    --yellow-bg:#fef3c7;
+    --yellow-border:#d97706;
+
+
+    /* comparação */
+    --comparacao-block-bg:lightblue;
+    --comparacao-inline-bg:lightgreen;
+    --comparacao-inline-block-bg:#fde68a;
+    --observacao-bg:#e4f4f8;
+
+
+    /* Medidas */
+    --radius: 10px;
+    --gap: 10px;
+
+}
+
+/* estilo geral */
+body{
+    font-family: var(--font-main);
+    background-color: var(--color-bg-page);
+    color: var(--color-text);
+    margin:20px;
+}
+
+h1,h2{
+    color:var(--color-primary);
+    text-align:center;
+}
+
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 24px;
+}
+h3{
+    margin-top:25px;
+}
+p{
+    line-height: 1.7;
+}
+
+.bloco{
+    background: var(--color-white);
+    border: 1.3px solid var(--color-gray);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* COMPARAÇÃO */
+.comparacao{
+    border: 2px dashed var(--color-gray);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* observação */
+.observacao{
+    background-color: var(--observacao-bg);
+    border-left: 5px solid var(--color-primary);
+    padding: 12px;
+}
+
+/* Display Block */
+
+.exemplo-block div{
+    display: block;
+    background-color: var(--blue-bg);
+    border: 1px solid var(--blue-border);
+    padding: 4px;
+    margin-bottom: 5px;
+    /*width: 50%;*/
+    border-radius: 4px;
+}
+
+.comparacao.block div{
+    display:block;
+    background-color: var(--comparacao-block-bg);
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/* Display inline */
+.exemplo-inline span{
+    display: inline;
+    background-color: var(--green-bg);
+    border: 2px solid var(--green-border);
+    padding: 1px;
+    margin-left: 10px;
+}
+
+.comparacao.inline span{
+    display: inline;
+    background-color: var(--comparacao-inline-bg);
+    padding: 10px;
+}
+
+/* Display Inline-Block */
+.exemplo-inline-block div{
+    display: inline-block;
+    background-color: var(--yellow-bg);
+    border: 2px solid var(--yellow-border);
+    padding: 1px;
+    margin-left: 10px;
+    margin-top:5px;
+    margin-bottom:9px;
+    text-align:center;
+    line-height:30px;
+
+}
+
+.comparacao.inline-block div{
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    background-color:var(--comparacao-inline-block-bg);
+    padding: 20px;
+    margin-right: 10px;
+    text-align:center;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+
+/* Display none */
+
+.none.exemplo{
+    display:flex;
+    gap: var(--gap);
+    background-color: var(--color-bg-box);
+    padding:20px;
+}
+
+.none.exemplo div{
+    flex: 1;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 25px;
+    text-align: center;
+}
+
+.none-exemplo .elemento-oculto{
+    display: none;
+}
+
