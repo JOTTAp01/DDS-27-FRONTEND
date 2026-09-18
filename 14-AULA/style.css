@@ -282,3 +282,93 @@ p{
     justify-content: center;
 }
 
+
+/* GRID */
+.exemplo-grid{
+    display:grid;
+    gap:var(--gap);
+    /* grid-template-columns: 30% 40% 30%; */
+    /* grid-template-rows: 200px 80px 600px ; */
+    grid-template: 1fr 2fr 1fr / 3fr 7fr;
+
+}
+
+.exemplo-grid div{
+    background-color: pink;
+    color: var(--color-white);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Grid templete */
+/* grid-2-colunas */
+/* Pai */
+.grid-duas-colunas{
+    display:grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 150px 100px;
+
+
+
+}
+
+
+/* Filho */
+.grid-duas-colunas div{
+    display:grid;
+    background-color:aquamarine;
+    color:crimson;
+    padding: 20px;
+    text-align:right;
+}
+
+
+
+
+/* grid-4-colunas */
+/* Pai */
+.grid-quatro-colunas{
+    display:grid;
+    gap:var(--gap);
+    grid-template-columns: repeat(4, 4fr);
+    
+
+}
+
+
+/* Filho */
+.grid-quatro-colunas div{
+
+    display:grid;
+    background-color:brown;
+    color:blue;
+    padding: 20px;
+    text-align:center;
+}
+
+
+/* Responsividade */
+
+@media (max-width:700px){
+    .exemplo-inline-block div{
+        width: 85%;
+        margin-bottom: 12px;
+    }
+
+    /* .grid-duas-colunas{ */
+        /* grid-template-columns: 100%; */
+    /* } */
+
+    /* .grid-quatro-colunas{ */
+        /* grid-template-columns: repeat(2, 1fr); */
+    /* } */
+
+
+}
+
+
+
+
+
+
